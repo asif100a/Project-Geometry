@@ -145,11 +145,27 @@
                     <div class="card-body">
                         <h2 class="text-[1.25rem] font-semibold text-center">Pentagon</h2>
                         <p class="text-center text-xl">Area (A) = 0.5 x p x b</p>
+                        <div>
+                            <input type="text" name="" id="pentagon-perimeter" class="w-24 text-2xl p-2 rounded-s"
+                            placeholder="Perimeter">
+                            <span class="ml-3 mr-3">cm</span>
+                            <input type="text" name="" id="pentagon-apothem" class="w-24 text-2xl p-2 rounded-s"
+                            placeholder="Apothem">
+                            <span class="ml-3">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area:
+                                <span id="pentagon-area">0</span>
+                                <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <!-- Pentagon Button -->
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Shape Card-[6]==[Ellipse] -->
                 <div class="card card-compact w-80 bg-base-100 shadow-xl">
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
@@ -180,6 +196,7 @@
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
+    <script src="scripts/pentagon.js"></script>
 </body>
 
 </html>
