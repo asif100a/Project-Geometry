@@ -147,10 +147,10 @@
                         <p class="text-center text-xl">Area (A) = 0.5 x p x b</p>
                         <div>
                             <input type="text" name="" id="pentagon-perimeter" class="w-24 text-2xl p-2 rounded-s"
-                            placeholder="Perimeter">
+                            placeholder="Peri">
                             <span class="ml-3 mr-3">cm</span>
                             <input type="text" name="" id="pentagon-apothem" class="w-24 text-2xl p-2 rounded-s"
-                            placeholder="Apothem">
+                            placeholder="Apo">
                             <span class="ml-3">cm</span>
                         </div>
                         <div>
@@ -171,9 +171,22 @@
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="text-[1.25rem] font-semibold text-center">Ellipse</h2>
-                        <p class="text-center text-xl">Area (A) = <span></span>ab</p>
+                        <p class="text-center text-xl">Area (A) = 𝝅ab</p>
+                        <div>
+                            <input type="text" name="" id="ellipse-a" class="w-24 text-2xl p-2 rounded-s"
+                            placeholder="a">
+                            <span class="ml-3 mr-3">cm</span>
+                            <input type="text" name="" id="ellipse-b" class="w-24 text-2xl p-2 rounded-s"
+                            placeholder="b">
+                            <span class="ml-3">cm</span>
+                        </div>
+                        <p class="text-xl">Area:
+                            <span id="ellipse-area">0</span>
+                            <span>cm<sup>2</sup></span>
+                        </p>
+                        <!-- Ellipse Button -->
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -197,6 +210,7 @@
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
     <script src="scripts/pentagon.js"></script>
+    <script src="scripts/ellipse.js"></script>
 </body>
 
 </html>
